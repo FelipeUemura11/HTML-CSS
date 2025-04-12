@@ -1,0 +1,168 @@
+.bandeiras {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brasil {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 146, 70, 1);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.losango {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #ffdf00; /* Amarelo */
+    transform: translate(-50%, -50%) rotate(45deg); /* vira losango */
+    }
+
+.circulo-azul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #002776; /* Azul */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faixa-branca {
+    width: 70px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 1); /* Branco */
+    transform: rotate(-27deg); /* Inclinação da faixa */
+    position: absolute;
+}
+
+.franca {
+    display: flex;
+    width: 250px;
+    height: 150px;
+}
+
+.alemanha {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+}
+
+.italia {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+}
+
+.japao {
+    display: flex;;
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.inglaterra {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.costa-rica {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rep-tcheca {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.triangulo {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-left: 125px solid rgba(0, 85, 164, 1);
+}
+
+.faixa-vertical, .faixa-horizontal {
+    position: absolute;
+}
+
+.faixa-vertical{
+    width: 40px;
+    height: 150px;
+    background-color: red;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.faixa-horizontal {
+    width: 222px;
+    height: 40px;
+    background-color: red;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faixa {
+    flex: 1;
+}
+
+.verde {
+    background-color: rgba(0, 146, 70, 1);
+}
+
+.branco {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.azul {
+    background-color: rgba(0, 85, 164, 1);
+}
+
+.branco {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.vermelho {
+    background-color: rgba(186, 12, 47, 1);
+}
+
+.preto {
+    background-color: rgba(0, 0, 0, 1 );
+}
+
+.amarelo{
+    background-color: rgba(255, 206, 0, 1);
+}
