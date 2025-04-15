@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Seletores CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Seletores do CSS</h1>
+        <p>Aprendendo sobre todos os tipos de seletores CSS</p>
+    </header>
+
+    <div class="exemplo-container">
+        <h2>Seletores Simples</h2>
+        <p> caracteres colocados antes do seletor </p>
+        <div class="exemplo">
+            <span id="seletor1">Seletor de ID (#)</span>
+            <span id="seletor1">HTML id="seletor1" | CSS #seletor1 { }</span>
+            <br>
+            <span class="destaque">Seletor de Classe (.)</span>
+            <span class="destaque">HTML class="destaque" | CSS .destaque { }</span>
+        </div>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Seletores Combinados</h2>
+        <p> caracteres colocados entre os seletores </p>
+        <div class="exemplo">
+            <p>Descendente (espaço)</p>
+            <p>Filho direto (>)</p>
+            <p>Adjacente (+)</p>
+            <p>Irmãos (~)</p>
+        </div>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Pseudo-classes</h2>
+        <p> troca de cor em buttons/inputs/checkboxes e classificacao crescente(1,2,3)</p>
+        <div class="exemplo">
+            <!-- Exemplo de troca de cor -->
+            <button class="hover-exemplo">Passe o mouse aqui!</button>
+
+            <!-- Exemplo de classificacao crescente(1,2,3) -->
+            <div class="lista-items">
+                <p>Primeiro item (first-child)</p>
+                <p>Segundo item (nth-child(2))</p>
+                <p>Terceiro item (nth-child(3))</p>
+                <p>Último item (last-child)</p>
+            </div>
+
+            <!-- Exemplo de :focus (contorno ao clicar) -->
+            <input type="text" placeholder="Clique aqui para :focus">
+
+            <!-- Exemplo de :checked (marcar e desmarcar com cor) -->
+            <div class="checkbox-exemplo">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">Marque-me para ver :checked</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Pseudo-elementos</h2>
+        <p> conteudo antes e depois do elemento e primeira letra estilizada</p>
+        <div class="exemplo">
+            <p class="setas">Exemplo com before e after</p>
+            <p class="primeira-letra">Primeira letra estilizada</p>
+        </div>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Seletores de Atributos</h2>
+        <p> seleciona elementos com atributos específicos </p>
+        <div class="exemplo">
+            <p title="exemplo1">Com atributo title</p>
+            <p data-tipo="especial">Com data-tipo específico</p>
+            <p class="começa-com">Começa com</p>
+        </div>
+    </div>
+</body>
+</html>

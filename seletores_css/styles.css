@@ -1,0 +1,197 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+/* Container de Exemplos */
+.exemplo-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.exemplo-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.exemplo-container p {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 18px;
+}
+
+.exemplo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+/* Seletores Simples */
+#seletor1 {
+    color: #e74c3c;
+    font-weight: bold;
+} 
+
+.destaque {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/* ===== PSEUDO-CLASSES ===== */
+
+/* Exemplo de :hover */
+.hover-exemplo {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hover-exemplo:hover {
+    background-color:rgb(36, 44, 49);
+    transform: scale(1.1);
+}
+
+/* Container para os exemplos de lista */
+.lista-items {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Primeiro filho */
+.lista-items p:first-child {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Último filho */
+.lista-items p:last-child {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Item específico (nth-child) */
+.lista-items p:nth-child(2) {
+    background-color: #f1c40f;
+    padding: 10px;
+    margin: 0;
+}
+
+.lista-items p:nth-child(3) {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Exemplo de :focus */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    margin: 10px 0;
+}
+
+input[type="text"]:focus {
+    border-color:rgb(205, 52, 219);
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Exemplo de :checked */
+.checkbox-exemplo {
+    margin: 10px 0;
+}
+
+.checkbox-exemplo input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-exemplo input[type="checkbox"]:checked + label {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Adicione legendas explicativas */
+.lista-items::before {
+    content: "Exemplos de pseudo-classes de posição:";
+    display: block;
+    padding: 5px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+}
+
+
+/* Pseudo-elementos */
+.setas::before,
+.setas::after {
+    content: "→";
+    color: #2c3e50;
+    margin: 0 5px;
+}
+
+.setas::after {
+    content: "←";
+}
+
+.primeira-letra::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Seletores de Atributos */
+[title] {
+    border-bottom: 2px dashed #3498db;
+}
+
+[data-tipo="especial"] {
+    background-color: #ffeaa7;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+[class^="começa"] {
+    color: #e17055;
+    font-style: italic;
+}
+
